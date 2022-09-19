@@ -19,7 +19,7 @@ services:
     restart: always
     tty: true
     volumes:
-      - ./nginx_node/mysql:/var/lib/mysql
+      - ./nginx_node/db/mysql:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root
