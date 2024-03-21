@@ -11,6 +11,9 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    volumes:
+      - ./nginx_node/node:/usr/src/app
+      - /usr/src/app/node_modules
 
   db:
     image: mysql:5.7
